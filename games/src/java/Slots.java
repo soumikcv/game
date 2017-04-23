@@ -52,13 +52,9 @@ while (cursor.hasNext()) {
     
     String UpdateSlots(String day,String slot){
         DBCollection coll = db.getCollection("Slots");
-        BasicDBObject andQuery = new BasicDBObject();
-        List <BasicDBObject> obj = new ArrayList<BasicDBObject>();
- DBObject oneDetails;
-  BasicDBObject queryDetails = new BasicDBObject();
- queryDetails.put("day",day);
- DBCursor cursorDetails =coll.find(queryDetails);
- boolean Name=cursorDetails.hasNext();
+
+
+
 
       BasicDBObject newDocument =
 	new BasicDBObject().append("$inc",
