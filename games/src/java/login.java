@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author teja
  */
-@WebServlet(urlPatterns = {"/login"})
+@WebServlet(name="login",urlPatterns = {"/login"})
 public class login extends HttpServlet {
 
     /**
@@ -31,18 +31,21 @@ public class login extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet login</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet login at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+      System.out.println("jsp called");
+              
+            User user=new User();
+              
+            String username = request.getParameter("username");
+            String password = request.getParameter("password");
+            String s= user.authenticate(username, password);
+            if(s.equalsIgnoreCase("authenticated"))
+            {
+                  response.sendRedirect("profile.html");
+            }
+            else{
+                System.out.print("error"); 
+                response.sendRedirect("signup.html");
+            }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

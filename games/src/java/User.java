@@ -71,20 +71,21 @@ int i=0;
 while (cursor.hasNext()) {
 	System.out.println(cursor.next());
         i=1;
+        
 }
 if(i==1)
 {
+i++;
 return "authenticated";
 }
 else 
 {
     return "invalid user";
-    
-
-
+   
 }
     
     
-   }
-    
+    }
 }
+    
+
