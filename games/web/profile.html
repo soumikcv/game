@@ -14,84 +14,34 @@
 <!-- Plugin CSS -->
 <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 <!-- Custom CSS -->
-<link rel="stylesheet" href="css/style.css" type="text/css">
 <link rel="stylesheet" href="css/profile1.css" type="text/css">
-<link rel="stylesheet" href="css/profile2.css" type="text/css">
-<link rel="stylesheet" href="css/profile3.css" type="text/css">
-  <link rel="stylesheet" href="stylesheets/magnific-popup.css">
-
-  <script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
-    <script src="js/jquery-1.10.2.js"></script>
-
-
-  <script type="text/javascript">
-    $(document).ready(function(){ 
-        $("#myTab a").click(function(e){
-          e.preventDefault();
-          $(this).tab('show');
-        });
-    });
-  </script>
+<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body id="page-top">
-	<div class="body-wrapper">
-
-		<div class="col-sm-9" style="float: right;">
-			<ul class="nav nav-pills" id="myTab">
-			  <li role="presentation" class="active"><a href="#ongoing-drills">Ongoing Drills</a></li>
-			  <li role="presentation"><a href="#own-drills">My Own Drills</a></li>
-			  <li role="presentation"><a href="#create-drill"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Create Drill</a></li>
-			</ul>
-			<hr style="margin-top: 10px; border-color: #DEF2FF;">
-
-		<div class="tab-content" style="border: 0">
-
-			<!-- ONGOING DRILLS SECTION -->
-			<div id="ongoing-drills" class="tab-pane fade in active">
-			</div>
-
-
-			<!-- OWN DRILLS SECTION -->
-			<div id="own-drills" class="tab-pane fade">
-				
-			</div>
-
-			<!-- CREATE DRILL SECTION -->
-			<div id="create-drill" class="tab-pane fade">
-			
-			</div>
-
-		</div>
-		</div>
-	</div>
-
-			<div class="col-sm-3 profile-sidebar stuckMenu isStuck text-center" style="position: fixed; top: 60px">
+	
+	<div class="container">
+    <div class="row profile">
+		<div class="col-md-3">
+			<div class="profile-sidebar">
 				<!-- SIDEBAR USERPIC -->
 				<div class="profile-userpic">
-					<svg style="height: 200px;" viewbox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-					  <defs>
-					    <pattern id="img" patternUnits="userSpaceOnUse" width="100" height="100">
-					      
-					    </pattern>
-					  </defs>
-					  <polygon points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"/>
-					</svg>
+					
 				</div>
 				<!-- END SIDEBAR USERPIC -->
 				<!-- SIDEBAR USER TITLE -->
 				<div class="profile-usertitle">
 					<div class="profile-usertitle-name">
-						
+						Marcus Doe
 					</div>
 					<div class="profile-usertitle-job">
-						
+						Gamer
 					</div>
 				</div>
 				<!-- END SIDEBAR USER TITLE -->
 				<!-- SIDEBAR BUTTONS -->
 				<div class="profile-userbuttons">
-					<button type="button" class="btn btn-primary btn-warning">16 Drills</button>
-					<button type="button" class="btn btn-primary btn-success">190 Upvotes</button>
+					<button type="button" class="btn btn-success btn-sm">Follow</button>
+					<button type="button" class="btn btn-danger btn-sm">Message</button>
 				</div>
 				<!-- END SIDEBAR BUTTONS -->
 				<!-- SIDEBAR MENU -->
@@ -99,53 +49,37 @@
 					<ul class="nav">
 						<li class="active">
 							<a href="#">
-							<i class="glyphicon glyphicon-home"></i>
-							Overview </a>
+							<i class="glyphicon glyphicon-calendar"></i>
+							Book Hours </a>
 						</li>
 						<li>
-							<a href="/about">
+							<a href="#">
 							<i class="glyphicon glyphicon-user"></i>
-							Account Settings </a>
+							Tournaments </a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<i class="glyphicon glyphicon-shopping-cart"></i>
+							Buy Credits</a>
 						</li>
 						<li>
 							<a href="#">
 							<i class="glyphicon glyphicon-flag"></i>
-							Help </a>
+							Account Details </a>
 						</li>
 					</ul>
 				</div>
 				<!-- END MENU -->
 			</div>
+		</div>
+		<div class="col-md-9">
+            <div class="profile-content">
+			   
+            </div>
+		</div>
 	</div>
-<script src="js/bootstrap.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/script.js"></script>
-    <!-- StikyMenu -->
-    <script src="js/stickUp.min.js"></script>
-    <script type="text/javascript">
-      jQuery(function($) {
-      $(document).ready( function() {
-        $('.navbar-default').stickUp();
-      });
-      });
-    </script>
-  <!-- Smoothscroll -->
-  <script type="text/javascript" src="js/jquery.corner.js"></script> 
-  <script src="js/wow.min.js"></script>
-  <script>
-   new WOW().init();
-  </script>
-  <script src="js/classie.js"></script>
-  <script src="js/uiMorphingButton_inflow.js"></script>
-  <!-- Magnific Popup core JS file -->
-  <script src="js/jquery.magnific-popup.js"></script>
-  <script type="text/javascript"> //for navbar tabs
-    $(document).ready(function(){
-        $("#myTab a").click(function(e){
-          e.preventDefault();
-          $(this).tab('show');	
-        });
-    });
-  </script>
+</div>
+<br>
+<br>
 </body>
 </html>
