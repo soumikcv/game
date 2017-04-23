@@ -43,7 +43,7 @@ body {
 }
 
 .profile-usertitle-name {
-  color: #5a7391;
+  color: #f05f40;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 7px;
@@ -51,7 +51,7 @@ body {
 
 .profile-usertitle-job {
   text-transform: uppercase;
-  color: #5b9bd1;
+  color: #  ;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
@@ -99,7 +99,7 @@ body {
 
 .profile-usermenu ul li a:hover {
   background-color: #fafcfd;
-  color: #5b9bd1;
+  color: #f05f40;
 }
 
 .profile-usermenu ul li.active {
@@ -107,9 +107,9 @@ body {
 }
 
 .profile-usermenu ul li.active a {
-  color: #5b9bd1;
+  color:#f05f40;
   background-color: #f6f9fb;
-  border-left: 2px solid #5b9bd1;
+  border-left: 2px solid #f05f40;
   margin-left: -2px;
 }
 
