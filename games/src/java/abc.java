@@ -20,13 +20,8 @@ import java.util.List;
 public class abc {
     public static void main(String args[])
     {
-   Slots ss=new Slots();
- 
-  // String s=ss.GetSlots();
-    String s;
-   //System.out.println(s);
- 
-   s= ss.UpdateSlots("310417","slot1");
+ Credits c=new Credits();
+ String s=c.SetCredits("123", 2);
    System.out.println(s);
     
     
