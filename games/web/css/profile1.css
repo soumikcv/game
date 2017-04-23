@@ -5,7 +5,7 @@ Licensed under MIT
 ***/
 
 body {
-  background: #F1F3FA;
+  background: #1c1c1c;
 }
 
 /* Profile container */
@@ -15,8 +15,16 @@ body {
 
 /* Profile sidebar */
 .profile-sidebar {
+  position: fixed;
   padding: 20px 0 10px 0;
-  background: #fff;
+  background: #eee;
+    width: 350px;
+  padding: 40px 30px;
+  background: #eee;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+
 }
 
 .profile-userpic img {
@@ -36,7 +44,7 @@ body {
 
 .profile-usertitle-name {
   color: #5a7391;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 7px;
 }
@@ -44,7 +52,7 @@ body {
 .profile-usertitle-job {
   text-transform: uppercase;
   color: #5b9bd1;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -80,13 +88,13 @@ body {
 
 .profile-usermenu ul li a {
   color: #93a3b5;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 .profile-usermenu ul li a i {
   margin-right: 8px;
-  font-size: 14px;
+  font-size: 30px;
 }
 
 .profile-usermenu ul li a:hover {
@@ -107,7 +115,16 @@ body {
 
 /* Profile Content */
 .profile-content {
+  position: relative;
   padding: 20px;
   background: #fff;
   min-height: 460px;
+  width: 800px;
+  padding: 40px 30px;
+  background: #eee;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin: auto;
+  transform: translateX(75px);
 }
