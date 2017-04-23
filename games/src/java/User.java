@@ -44,7 +44,7 @@ public class User {
 			
          //boolean auth = db.authenticate(myUserName, myPassword);
          //System.out.println("Authentication: "+auth);
-			DBObject person = new BasicDBObject("Username",username ) .append("Password",password);
+			DBObject person = new BasicDBObject("Username",username ) .append("Password",password).append("Credits",0);
                                                         
          DBCollection coll = db.getCollection("User");
          coll.insert(person);
